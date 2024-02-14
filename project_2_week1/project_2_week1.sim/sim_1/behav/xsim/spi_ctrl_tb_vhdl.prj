@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_2_week1.srcs/sources_1/imports/hdl/MSA_SPI.vhd" \
+"../../../../project_2_week1.srcs/sim_1/imports/sim/SPI_ctrl_tb.vhd" \
+
+# Do not sort compile order
+nosort
