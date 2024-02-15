@@ -42,7 +42,6 @@ if rst_i = '1' then
     cnt <= to_unsigned(0, cnt'length);
     data <= "00000000";
 elsif(rising_edge(clk_i)) then
-
     case current_state is
         when attente =>
             if(start_i = '1') then
