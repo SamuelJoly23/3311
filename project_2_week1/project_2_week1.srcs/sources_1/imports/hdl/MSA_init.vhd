@@ -18,14 +18,11 @@ end MSA_init;
 
 architecture Behavioral of MSA_init is
 -- A completer
---signal vbat         : std_logic;
---signal vdd          : std_logic;
---signal res          : std_logic;
---signal dc           : std_logic;
 type state_type is (spi_send, spi_wait, timing_send, timing_wait, standby);
 signal current_state: state_type;
-signal oled        : std_logic_vector (4 downto 0);
-signal cntrom      : unsigned(5 downto 0); 
+signal oled        : std_logic_vector (4 downto 0); -- delete ??
+--signal cntrom      : unsigned(5 downto 0); 
+signal cntrom : std_logic_vector(4 downto 0) := "00000"; -- initialisation de la premiere addresse a 0
 
 begin
 
@@ -41,52 +38,46 @@ if rst_i = '1' then
     current_state <= standby;
 elsif(rising_edge(clk_i)) then
     case current_state is
-        when timing_send =>
-            timing_start_o <= '1';
-            current_state <= timing_wait;
-            
---            if(delay_i = '0' and SPI_ready_i <= '0') then
---                current_state <= spi;    
-
-        when timing_wait =>
-            if (timing_ready_i = '0') then
-                cntrom <= cntrom + 1;
-                --current_state <= ???????;
-                if (cntrom = 24) then 
-                current_state <= standby;
-                end if;
-            end if;
-
-
-            
         when spi_send =>
-            SPI_start_o <= '1';
-            current_state <= spi_wait;
-         
-         
+            if(SPI_ready_i = '1') then
+                SPI_start_o <= '1';
+                current_state <= spi_wait;
+            end if;
+
          when spi_wait => 
-            if (SPI_ready_i = '1') then 
-                cntrom <= cntrom + 1;
-                if (cntrom = 24) then
-                    current_state <= standby;
---            cntrom <= cntrom + 1;
---            if(delay_i = '1' and timing_ready_i <= '1') then 
---                current_state <= timing;
---            if (cntrom = 24);
-                end if;
+            SPI_start_o <= '0'; -- mise a zero du signal start apres une periode clk
+            cntrom <= std_logic_vector(unsigned(cntrom) + 1);
+            ROM_oled_cmd_addr_o <= cntrom;
+            
+            if(delay_i = '1') then -- definition du current_state selon la valeur du delay_i
+                current_state <= timing_send;
+            elsif(delay_i = '0') then 
+                current_state <= spi_send;
             end if;
             
-    
+            if unsigned(cntrom) = 24 then 
+                current_state <= standby;
+            end if;
+        
+        when timing_send =>
+            if(timing_ready_i = '1') then
+                timing_start_o <= '1';
+                current_state <= timing_wait;
+            end if;
+            
+        when timing_wait =>
+            timing_start_o <= '0'; -- mise a zero du signal start apres une periode clk
+            current_state <= spi_send;
+            
+            if(delay_i = '1') then -- definition du current_state selon la valeur du delay_i
+                current_state <= timing_send;
+            elsif(delay_i = '0') then
+                current_state <= spi_send;
+            end if;
+        
         when standby =>
             init_done_o <= '0'; -- done is active low
-        
-    ROM_oled_cmd_addr_o <= "10000";
-    
     end case;
 end if;
-    
-    
-    
-
-    end process;
+end process;
 end Behavioral;
