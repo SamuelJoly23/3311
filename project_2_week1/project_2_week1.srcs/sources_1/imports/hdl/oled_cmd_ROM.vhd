@@ -48,8 +48,8 @@ architecture arch_oled_cmd_ROM of oled_cmd_ROM is
     "0001" & X"03",  -- Addr 0x17 : suite: selection page d'arret
 
     -- Activation de tous les pixels de l'ecran
-    --"0001" & X"A5",                     -- screen Entire display on
-    "1111" & X"00", -- Mettre en commentaire cette ligne pour conserver la
+    "0001" & X"A5",                     -- screen Entire display on
+    --"1111" & X"00", -- Mettre en commentaire cette ligne pour conserver la
                     -- taille de la ROM
 
     -- Espace ROM extra

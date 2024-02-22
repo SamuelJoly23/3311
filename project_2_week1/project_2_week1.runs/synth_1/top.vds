@@ -1,0 +1,436 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 22 15:52:13 2024
+# Process ID: 43568
+# Current directory: C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.runs/synth_1/top.vds
+# Journal file: C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 34548 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 753.672 ; gain = 177.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/top.vhd:17]
+INFO: [Synth 8-3491] module 'clk_wiz' declared at 'C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.runs/synth_1/.Xil/Vivado-43568-DESKTOP-7ES4SVN/realtime/clk_wiz_stub.vhdl:5' bound to instance 'inst_clk_wiz_50mhz' of component 'clk_wiz' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/top.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.runs/synth_1/.Xil/Vivado-43568-DESKTOP-7ES4SVN/realtime/clk_wiz_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'MSA_SPI' declared at 'C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_SPI.vhd:5' bound to instance 'inst_MSA_SPI' of component 'MSA_SPI' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/top.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'MSA_SPI' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_SPI.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'MSA_SPI' (1#1) [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_SPI.vhd:15]
+INFO: [Synth 8-3491] module 'MSA_Affichage' declared at 'C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_affichage.vhd:5' bound to instance 'inst_MSA_affichage' of component 'MSA_affichage' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/top.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'MSA_Affichage' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_affichage.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'MSA_Affichage' (2#1) [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_affichage.vhd:17]
+INFO: [Synth 8-3491] module 'MSA_init' declared at 'C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_init.vhd:6' bound to instance 'inst_MSA_init' of component 'MSA_init' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/top.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'MSA_init' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_init.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'MSA_init' (3#1) [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_init.vhd:19]
+INFO: [Synth 8-3491] module 'oled_cmd_ROM' declared at 'C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/oled_cmd_ROM.vhd:5' bound to instance 'inst_oled_cmd_ROM' of component 'oled_cmd_ROM' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/top.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'oled_cmd_ROM' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/oled_cmd_ROM.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'oled_cmd_ROM' (4#1) [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/oled_cmd_ROM.vhd:14]
+INFO: [Synth 8-3491] module 'MSA_timing' declared at 'C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_timing.vhd:5' bound to instance 'inst_MSA_timing_init' of component 'MSA_timing' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/top.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'MSA_timing' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_timing.vhd:13]
+WARNING: [Synth 8-614] signal 'ms_counter_f' is read in the process but is not in the sensitivity list [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_timing.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'MSA_timing' (5#1) [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_timing.vhd:13]
+INFO: [Synth 8-3491] module 'MSA_echiquier' declared at 'C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_echiquier.vhd:6' bound to instance 'inst_MSA_echiquier' of component 'MSA_echiquier' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/top.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'MSA_echiquier' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_echiquier.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'MSA_echiquier' (6#1) [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_echiquier.vhd:17]
+INFO: [Synth 8-3491] module 'MSA_timing' declared at 'C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/MSA_timing.vhd:5' bound to instance 'inst_MSA_timing_echiquier' of component 'MSA_timing' [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/top.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/imports/hdl/top.vhd:17]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port clk_i
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port rst_i
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port timing_ready_i
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port row_i[4]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port row_i[3]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port row_i[2]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port row_i[1]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port row_i[0]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port column_i[6]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port column_i[5]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port column_i[4]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port column_i[3]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port column_i[2]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port column_i[1]
+WARNING: [Synth 8-3331] design MSA_echiquier has unconnected port column_i[0]
+WARNING: [Synth 8-3331] design MSA_Affichage has unconnected port clk_i
+WARNING: [Synth 8-3331] design MSA_Affichage has unconnected port rst_i
+WARNING: [Synth 8-3331] design MSA_Affichage has unconnected port pixel_i
+WARNING: [Synth 8-3331] design MSA_Affichage has unconnected port SPI_ready_i
+WARNING: [Synth 8-3331] design MSA_Affichage has unconnected port init_done_i
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 819.121 ; gain = 242.727
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 819.121 ; gain = 242.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 819.121 ; gain = 242.727
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'inst_clk_wiz_50mhz'
+Finished Parsing XDC File [c:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'inst_clk_wiz_50mhz'
+Parsing XDC File [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/constrs_1/imports/contraintes/labo_2.xdc]
+Finished Parsing XDC File [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/constrs_1/imports/contraintes/labo_2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/constrs_1/imports/contraintes/labo_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 942.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 942.617 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 942.617 ; gain = 366.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 942.617 ; gain = 366.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_i. (constraint file  {c:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_i. (constraint file  {c:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for inst_clk_wiz_50mhz. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 942.617 ; gain = 366.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'MSA_init'
+INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'MSA_timing'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             timing_send |                            00001 |                              010
+             timing_wait |                            00010 |                              011
+                spi_send |                            00100 |                              000
+                spi_wait |                            01000 |                              001
+                 standby |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'MSA_init'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   ready |                               00 |                               00
+                counting |                               01 |                               01
+                  iSTATE |                               10 |                               10
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'sequential' in module 'MSA_timing'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 942.617 ; gain = 366.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module MSA_SPI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module MSA_init 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 6     
+Module oled_cmd_ROM 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+Module MSA_timing 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (inst_MSA_timing_echiquier/FSM_sequential_state_r_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (inst_MSA_timing_echiquier/FSM_sequential_state_r_reg[0]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 942.617 ; gain = 366.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+------------------------------+---------------+----------------+
+|Module Name  | RTL Object                   | Depth x Width | Implemented As | 
++-------------+------------------------------+---------------+----------------+
+|oled_cmd_ROM | ROM_cst[0]                   | 32x12         | LUT            | 
+|top          | inst_oled_cmd_ROM/ROM_cst[0] | 32x12         | LUT            | 
++-------------+------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst_clk_wiz_50mhz/clk_out1' to pin 'inst_clk_wiz_50mhz/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:31 . Memory (MB): peak = 942.617 ; gain = 366.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 943.312 ; gain = 366.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 946.012 ; gain = 369.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 952.828 ; gain = 376.434
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 952.828 ; gain = 376.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 952.828 ; gain = 376.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 952.828 ; gain = 376.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 952.828 ; gain = 376.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 952.828 ; gain = 376.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_wiz_bbox_0 |     1|
+|2     |CARRY4         |     6|
+|3     |LUT1           |     2|
+|4     |LUT2           |     6|
+|5     |LUT3           |     7|
+|6     |LUT4           |    40|
+|7     |LUT5           |    30|
+|8     |LUT6           |    22|
+|9     |FDCE           |    63|
+|10    |FDPE           |     5|
+|11    |FDRE           |     9|
+|12    |IBUF           |     1|
+|13    |OBUF           |     6|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-----------------------+-------------+------+
+|      |Instance               |Module       |Cells |
++------+-----------------------+-------------+------+
+|1     |top                    |             |   199|
+|2     |  inst_MSA_SPI         |MSA_SPI      |    44|
+|3     |  inst_MSA_init        |MSA_init     |    39|
+|4     |  inst_MSA_timing_init |MSA_timing   |    95|
+|5     |  inst_oled_cmd_ROM    |oled_cmd_ROM |    12|
++------+-----------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 952.828 ; gain = 376.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 952.828 ; gain = 252.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 952.828 ; gain = 376.434
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 963.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 963.715 ; gain = 673.094
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 963.715 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 22 15:53:11 2024...

@@ -1,2 +1,6 @@
 Vivado Simulator 2019.1
 Time resolution is 1 ps
+Error: Test6 Error: ROM_oled_cmd_addr_o should be 00010 after SPI_ready_i is HIGH
+Time: 320 ns  Iteration: 2  Process: /msa_init_tb/driver  File: C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sim_1/new/init_tb_v2.vhd
+Error: Test6 Error: ROM_oled_cmd_addr_o should be 00010 after SPI_ready_i is HIGH
+Time: 320 ns  Iteration: 2  Process: /msa_init_tb/driver  File: C:/Users/samue/polymtl.ca/H24 - General/3311/project_2_week1/project_2_week1.srcs/sim_1/new/init_tb_v2.vhd
