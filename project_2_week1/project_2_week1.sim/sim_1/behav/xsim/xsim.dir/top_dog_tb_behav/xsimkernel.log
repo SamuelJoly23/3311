@@ -1,0 +1,4 @@
+Running: xsim.dir/top_dog_tb_behav/xsimk.exe -simmode gui -wdb top_dog_tb_behav.wdb -simrunnum 0 -socket 61490
+Design successfully loaded
+Design Loading Memory Usage: 7556 KB (Peak: 7556 KB)
+Design Loading CPU Usage: 15 ms
