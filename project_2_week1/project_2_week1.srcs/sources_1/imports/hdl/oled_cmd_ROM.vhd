@@ -21,11 +21,11 @@ architecture arch_oled_cmd_ROM of oled_cmd_ROM is
   -- bits 7-0: commande SPI, donnee SPI ou delay d'attente (dependant des bits 12 et 11)
   constant ROM_cst : ROM_T := (
     --Sequence d'initialisation
-    "1011" & X"01",  -- Addr 0x00 : Mise sous tension VDD, attente 1ms
-    "0011" & X"AE",  -- Addr 0x01 : Envoi commande Display Off 0xAE
-    "1010" & X"01",  -- Addr 0x02 : Reinitialisation, attente 1ms
-    "1011" & X"01",  -- Addr 0x03 : Fin reinitialisation, attente 1ms
-    "0011" & X"8D",  -- Addr 0x04 : Envoi commande Enable Charge Pump 0x8D14
+    "1011" & X"01",  -- Addr 0x00 : Mise sous tension VDD, attente 1ms                                  delay
+    "0011" & X"AE",  -- Addr 0x01 : Envoi commande Display Off 0xAE                                     commande    
+    "1010" & X"01",  -- Addr 0x02 : Reinitialisation, attente 1ms                                       delay
+    "1011" & X"01",  -- Addr 0x03 : Fin reinitialisation, attente 1ms                                   delay
+    "0011" & X"8D",  -- Addr 0x04 : Envoi commande Enable Charge Pump 0x8D14                            commande
     "0011" & X"14",  -- Addr 0x05 : suite
     "0011" & X"D9",  -- Addr 0x06 : Envoi commande Set Pre-Charge Period 0xD9F1
     "0011" & X"F1",  -- Addr 0x07 : suite

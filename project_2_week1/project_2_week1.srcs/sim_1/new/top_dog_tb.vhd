@@ -85,6 +85,7 @@ begin
     stim_proc : process
     begin
     -- clock simulation ??
-    
+    --wait for 1 us;
+    --rst_n_i <= '0';
     end process;
 end Behavioral;
